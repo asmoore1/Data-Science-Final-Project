@@ -23,10 +23,10 @@ for name, model in models.items():
     print(f"\n{name} Validation Scores: {scores}")
     confusionMatrix(name, cm, f"Validation Confusion Matrix - {name}")
 
-# Print CM for best model
-scores2, cm2 = evaluate(dt, X_test, y_test)
-print(f"Decision Tree Test Scores: {scores2}")
-confusionMatrix("Decision Tree", cm2, "Test Confusion Matrix - Decision Tree")
+# Print CM for best model- Decision Tree
+dtScore, dtCm = evaluate(dt, X_test, y_test)
+print(f"Decision Tree Test Scores: {dtScore}")
+confusionMatrix("Decision Tree", dtCm, "Test Confusion Matrix - Decision Tree")
 
 # Compare models with ROC curve
 plotROC(models, X_val, y_val, colors)

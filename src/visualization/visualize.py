@@ -11,7 +11,8 @@ def confusionMatrix(modelName, cm, title):
     plt.xlabel("Predicted")
     plt.ylabel("Actual")
     plt.show()
-    
+
+ # I am not sure why the KNN curve is different than the notebook.   
 def plotROC(models, X_val, y_val, colors):
     for modelName, model in models.items():
         y_val_proba = model.predict_proba(X_val)[:, 1]
