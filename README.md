@@ -8,6 +8,6 @@ This classification assignment aims to test the performance of KNN, Gaussian Nai
 
 **Number of rows:** 2768
 
-**Features:** ID, Pregnancies, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age, Outcome
+**Features:** ID, Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age, Outcome
 
 **Initial Observations:** The dataset is very clean and contains only quantitative variables. Another observation that we noticed was there was about double the data points that did not have diabetes than those points that did have diabetes.
